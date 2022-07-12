@@ -10,14 +10,14 @@ aws --version
 
 # Configure AWS CLI
 ```
-aws configure set aws_access_key_id <<AWS_ACCESS_KEY_ID>> --profile my-accout-1
-aws configure set aws_secret_access_key <<AWS_SECRET_ACCESS_KEY>> --profile my-accout-1
-aws configure set region sa-est-1 --profile my-accout-1
+aws configure set aws_access_key_id <<AWS_ACCESS_KEY_ID>> --profile my-account-1
+aws configure set aws_secret_access_key <<AWS_SECRET_ACCESS_KEY>> --profile my-account-1
+aws configure set region sa-est-1 --profile my-account-1
 ```
 
 # Test AWS CLI
 ```
-aws --profile my-accout-1 sts get-caller-identity --query Account --output text
+aws --profile my-account-1 sts get-caller-identity --query Account --output text
 ```
 
 # Install Git CodeCommit Helper
