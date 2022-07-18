@@ -1,6 +1,6 @@
 # Install AWS CLI
 ```
-curl -fsSL https://awscli.amazonaws.com/awscli-exe-linux-$(uname -p).zip -o /tmp/awscliv2.zip
+curl -fsSL https://awscli.amazonaws.com/awscli-exe-linux-$(uname -m).zip -o /tmp/awscliv2.zip
 sudo unzip -q /tmp/awscliv2.zip -d /opt
 sudo /opt/aws/install -i /usr/local/aws-cli -b /usr/local/bin --update
 rm /tmp/awscliv2.zip
