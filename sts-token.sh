@@ -14,7 +14,7 @@ else
   sts=$(aws --profile $AWS_PROFILE sts get-session-token \
       --serial-number $MFA_SN \
       --token-code $MFA_TOKEN \
-      --duration-seconds ${4:-3600} \
+      --duration-seconds ${4:-36000} \
       --output text \
       --query \
       'Credentials.[AccessKeyId,SecretAccessKey,SessionToken,Expiration]')
