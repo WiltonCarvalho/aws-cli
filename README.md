@@ -25,9 +25,12 @@ aws --profile my-account-1 sts get-caller-identity --query Account --output text
 sudo pip3 install git-remote-codecommit
 ```
 
-# Get AWS STS Token
+# Get AWS MFA STS Token
 ```
-./sts-token.sh my-accout-1 wilton.carvalho 123321
+sudo cp sts-token.sh /usr/local/bin/sts-token.sh
+```
+```
+sts-token.sh my-accout-1 wilton.carvalho 123321
 ```
 
 # Git Clone CodeCommit with AWS CLI Profile
